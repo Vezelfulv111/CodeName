@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    tools:context=".Set_game">
+
+    <include
+        android:id="@+id/atoolbar"
+        layout="@layout/toolbar"
+        ></include>>
+
+    <Button
+        android:id="@+id/Captain"
+
+        android:layout_width="217dp"
+        android:layout_height="141dp"
+        android:background="@drawable/gradient_settings_button"
+        android:onClick="ChoiceTeam"
+        android:text="Команда капитанов\n\n(для игры с 2х телефонов)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/Player"
+        android:layout_width="217dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/gradient_settings_button"
+        android:gravity="center"
+        android:onClick="ChoiceTeam"
+        android:text="Команда игроков"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Captain" />
+
+    <TextView
+        android:id="@+id/whattodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Введите что нибудь"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Captain" />
+
+    <Button
+        android:id="@+id/nextscreen"
+        android:layout_width="217dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/gradient_settings_button"
+        android:gravity="center"
+        android:onClick="Nextscreen"
+        android:text="Продолжить"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Player" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Хрень Собачачья"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whattodo" />
+
+    <EditText
+        android:id="@+id/Number"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:hint="Ввод"
+        android:inputType="number"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/whattodo"
+        android:maxLength="4"
+        />
+
+    <Button
+        android:id="@+id/GEN"
+        android:layout_width="237dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gradient_settings_button"
+        android:inputType="number"
+        android:onClick="GEN"
+        android:text="Сгенерировать"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/nextscreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

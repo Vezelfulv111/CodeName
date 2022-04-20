@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    android:onClick="Chekword"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/ToMainScreen"
+            android:layout_width="184dp"
+            android:layout_height="60dp"
+            android:longClickable="true"
+            android:onClick="Backtostart"
+            android:text="На главный экран"
+
+            android:visibility="invisible"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/default_gradient"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/atoolbar"
+        layout="@layout/toolbar_for_words"></include>
+
+
+    <Button
+        android:id="@+id/ChangeWords"
+        android:layout_width="184dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="7dp"
+        android:longClickable="true"
+        android:onClick="toastMe"
+        android:text="Поменять слова"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/Table"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="@drawable/default_gradient"
+        />
+
+
+    <TableLayout
+        android:id="@+id/Table"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        android:weightSum="5"
+        app:layout_constraintBottom_toTopOf="@+id/ChangeWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atoolbar">
+
+        <TableRow
+            android:id="@+id/Row1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/Word01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/Word06"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word07"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word08"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word09"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/Word11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/Word16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word17"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word18"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word19"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/Word21"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word24"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/Word25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="19sp"
+                android:autoSizeMinTextSize="4sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/default_gradient"
+                android:maxLines="1"
+                android:onClick="Chekword"
+                android:text="Button" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/SHOW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="150dip"
+                android:text="показать поле"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/WhichTeamFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Красные ходят первыми"
+                android:textColor="#000000"
+                />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.game.codename">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CodeName">
+        <activity
+            android:name=".Rules"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".start_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_2"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".Captain_65"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".CaptainScreen"
+            android:exported="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:noHistory="true" />
+
+        <activity
+            android:name=".Set_game"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

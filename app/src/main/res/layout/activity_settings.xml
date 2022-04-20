@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    android:onClick="onRadioButtonClicked"
+    android:textAlignment="inherit"
+    tools:context=".Settings">
+
+    <include
+        android:id="@+id/atoolbar"
+        layout="@layout/toolbar"></include>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contextClickable="true"
+        android:orientation="horizontal"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FieldTopSize"
+        >
+
+
+        <RadioButton
+            android:id="@+id/radio25"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="5x5"
+            android:backgroundTint="#757575"
+            android:shadowColor="#777575"
+            android:textColor="#DD2C2C2C"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/radio30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="5x6"
+            android:backgroundTint="#757575"
+            android:shadowColor="#777575"
+            android:textColor="#DD2C2C2C"
+            android:textSize="40sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/FieldTopSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="#757575"
+        android:shadowColor="#777575"
+        android:textColor="#DD2C2C2C"
+        android:text="Размер поля:"
+
+        android:textAlignment="center"
+
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atoolbar" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#757575"
+        android:shadowColor="#777575"
+
+        android:text="TextView"
+        android:textColor="#DD2C2C2C"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

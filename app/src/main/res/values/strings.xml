@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">CodeName</string>
+
+    <string-array name="Language">
+
+        <item>Русский</item>
+        <item>English</item>
+    </string-array>
+
+    <string name="Rules">
+        \tИгроки делятся на две команды. Перед игроками выкладывается поле из 25 случайных слов.
+        Каждому слову соответствует <i>красные</i> и <i>синие</i> карточки команд, <i>белые</i> карточки и одна <i>черная</i> карточка.
+        Капитаны двух команд по очереди озвучивают ассоциацию для своих игроков.
+       <b>\n\tЦель игры\n</b>
+        Отгадать все свои слова раньше, чем это сделает команда противника, и не выбрать черное слово.
+
+<b>\n\tХод:\n</b>
+        \tКапитан команды смотрит на ключ-карту и видит, какие из 25 разложенных на столе карточек относятся к его словам,
+        какие слова белые и какая карточка является черной. После этого он дает своим игрокам подсказку в виде
+        одного слова-ассоциации и одной цифры, которая обозначает количество карточек, объединенных этим словом.
+        \n\tИгроки принадлещащей этой команде совещаются и выбирают одно слово,
+        которое, по их мнению, лучше всего подходит к ассоциации.
+        \n\tЕсли они отгадали верно и слово их цвета,они дальше продолжают угадывать слова. Если выбранная карточка белая,
+        то ход переходит к команде соперников.
+        \n\tЕсли выбранная карточка цвета противника, то ход переходит к противнику и он получает это слово как отгаданное.
+        \n\tЕсли команда выбирает <i>черное слово</i>, то она незамедлительно проигрывает.
+
+<b>\n\tКонец игры:\n</b>
+\tИгра заканчивается победой одной из команд в том случае, если команда верно отгадывает все cвои слова,
+        или команда противника выбирает черное слово.
+    </string>
+
+    <string name="Rules_ENG">
+     \t The players are divided into two teams. A field of 25 random words is laid out in front of the players.
+    Each word corresponds to <i>red</i> and <i>blue</i> team cards, <i>white</i> cards and one <i>black</i> card.
+    The captains of the two teams take turns voicing the association for their players.
+    <b>\n\t Goal of the game \n</b>
+
+    Guess all your words before the opposing team does, and do not choose the black word.
+    <b>\n\t Output: \n </b>
+    The team captain looks at the key card and sees which of the 25 cards spread out on the table relate to his words,
+    which words are white and which card is black. After that, he gives his players a hint in the form of
+    one word-association and one digit, which indicates the number of cards united by this word.
+    \n\t The players belonging to this team confer and choose one word,
+    which, in their opinion, is best suited to the association.
+    \n\t if they guessed correctly and the word of their color, they continue to guess the words further.
+        If the selected card is white, then the move goes to the opposing team.
+    \n\t If the selected card is the opponent color, then the move goes to the opponent and he gets this word as guessed.
+    \n\t if the team chooses the <i>black word</i>, it immediately loses.
+
+    <b>\n\t the end of the game: \n</b>
+    \t The game ends with the victory of one of the teams if the team correctly guesses all its words,
+    or the opposing team chooses a black word.
+    </string>
+
+</resources>
