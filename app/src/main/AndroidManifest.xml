@@ -26,23 +26,23 @@
         <activity
             android:name=".MainActivity_2"
             android:exported="false"
-            android:noHistory="true" />
+             />
         <activity
             android:name=".Captain_65"
             android:exported="false"
-            android:noHistory="true" />
+             />
         <activity
             android:name=".Settings"
             android:exported="false"
-            android:noHistory="true" />
+              />
         <activity
             android:name=".CaptainScreen"
             android:exported="true"
-            android:noHistory="true" />
+              />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:noHistory="true" />
+              />
 
         <activity
             android:name=".Set_game"
